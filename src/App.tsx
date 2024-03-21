@@ -1,5 +1,5 @@
-import AboutMe from "./AboutMe"
-import FeaturedProject from "./FeaturedProject"
+import AboutMe from "./sections/AboutMe"
+import FeaturedProject from "./sections/featuredProject/FeaturedProject"
 
 function App() {
   return (
