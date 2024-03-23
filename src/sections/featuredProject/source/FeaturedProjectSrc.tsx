@@ -1,15 +1,11 @@
-import HelixPoemSrc from "./helixPoem"
-import "highlight.js/styles/github-dark-dimmed.css"
-import CodeBlock from "./CodeBlock"
-
+import helixPoemHtml from "./helixPoemHtml"
 const FeaturedProjectSrc = () => {
   return (
-    <div className="absolute bg-black/50 inset-0 p-16">
-      <div className="overflow-hidden -mt-1 max-h-full">
-        <CodeBlock
-          language="javascript"
-          code={HelixPoemSrc}
-          className="text-sm -mt-5"
+    <div className="absolute inset-0 p-16 pointer-events-none">
+      <div className="relative flex">
+        <div
+          className="m-auto pointer-events-auto cursor-text p-2"
+          dangerouslySetInnerHTML={{ __html: helixPoemHtml }}
         />
       </div>
     </div>

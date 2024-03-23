@@ -21,16 +21,22 @@ const FeaturedProject = () => {
   }, [frame])
 
   return (
-    <div className="flex-1 bg-slate-800 p-16 h-[100vh] relative ">
-      {showSrc && <FeaturedProjectSrc />}
+    <div className={"flex-1 bg-slate-800 p-16 h-[100vh] relative"}>
       <div
-        className="overflow-hidden -mt-1 max-h-full cursor-pointer"
-        onClick={() => setShowSrc(true)}
+        className="absolute inset-0 cursor-pointer"
+        onClick={() => setShowSrc((show) => !show)}
+      />
+      <div
+        className={
+          "overflow-hidden -mt-1 max-h-full select-none pointer-events-none " +
+          (showSrc ? "blur-md opacity-50" : "")
+        }
       >
         {helixLines.map((l) => (
           <pre className="flex justify-center">{l}</pre>
         ))}
       </div>
+      {showSrc && <FeaturedProjectSrc />}
     </div>
   )
 }
