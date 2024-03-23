@@ -1,0 +1,127 @@
+/*
+
+VSCode Dark style. by harryHighPants http://nn.mit-license.org/
+
+*/
+
+.hljs {
+  background: #1f1f1f;
+  color: #f8f8f2;
+}
+
+.hljs-tag,
+.hljs-subst {
+  color: #f8f8f2;
+}
+
+.hljs-strong,
+.hljs-emphasis {
+  color: #a8a8a2;
+}
+
+.hljs-bullet,
+.hljs-quote {
+  color: #e6db74;
+}
+.hljs-number {
+  color: #a2c098;
+}
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+  color: #ae81ff;
+}
+
+.hljs-code,
+.hljs-title {
+  color: #aaff00;
+}
+.hljs-section,
+.hljs-selector-class {
+  color: #a6e22e;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-keyword {
+  color: #3695ce;
+}
+.hljs-selector-tag,
+.hljs-name {
+  color: #e6db74;
+}
+.hljs-attr {
+  color: #f92672;
+}
+
+.hljs-symbol,
+.hljs-attribute {
+  color: #66d9ef;
+}
+
+.hljs-params,
+.hljs-title.class_ {
+  color: #7eccec;
+}
+.hljs-class .hljs-title {
+  color: #7eccec;
+}
+
+.hljs-property {
+  color: #caca97;
+}
+
+.hljs-string,
+.hljs-type {
+  color: #be7e68;
+}
+.hljs-built_in {
+  color: #e6db74;
+}
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition {
+  color: #b574e6;
+}
+.hljs-variable {
+  color: #e67474;
+}
+.hljs-template-variable {
+  color: #ffed4c;
+}
+
+.hljs-comment {
+  color: #5b9a4c;
+}
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e;
+}
+
+/* for block of numbers */
+.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: center;
+  color: #ccc;
+  border-right: 1px solid #ccc;
+  vertical-align: top;
+  padding-right: 5px;
+}
+
+/* for block of code */
+.hljs-ln-code {
+  padding-left: 10px;
+}
