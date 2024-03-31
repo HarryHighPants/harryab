@@ -1,4 +1,4 @@
-import AboutMe from "./sections/AboutMe"
+import AboutMe from "./sections/aboutMe"
 import FeaturedProject from "./sections/featuredProject"
 
 function App() {
