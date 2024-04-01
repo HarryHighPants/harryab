@@ -1,3 +1,4 @@
+import { isBrowser } from "react-device-detect"
 import helixPoemHtml from "./formattedSrcHtml"
 
 interface Props {
@@ -12,6 +13,7 @@ const FeaturedProjectSrc = ({ setShowSrc }: Props) => {
           onMouseEnter={() => setShowSrc(true)}
           onMouseLeave={() => setShowSrc(false)}
           onClick={() =>
+            isBrowser &&
             window.open(
               "https://codepen.io/Harrison-Armitage-Bath/pen/rNbmXym?editors=0012",
               "_blank"
