@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Source Code Pro", system-ui, sans-serif;
+}
+
 body {
-  display: flex;
   min-height: 100vh;
+  background: rgb(17 24 39);
 }

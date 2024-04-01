@@ -39,7 +39,7 @@ const Helix = ({ showSrc }: Props) => {
       {helixLines.map((l, i) => (
         <pre
           key={i}
-          className="flex justify-center first-of-type:text-red-400 text-white"
+          className="flex justify-center first-of-type:text-[#FFE600] text-white"
           style={{ opacity: 1 - i * maxLines * 0.001 }}
         >
           {l}

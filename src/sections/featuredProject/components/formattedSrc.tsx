@@ -5,7 +5,7 @@ interface Props {
 }
 const FeaturedProjectSrc = ({ setShowSrc }: Props) => {
   return (
-    <div className="absolute inset-0 p-16 flex justify-center">
+    <div className="absolute inset-0 p-10 flex justify-center lg:p-16">
       <div className="relative flex -mt-2">
         <div
           className="m-auto p-2 hover:opacity-100 opacity-0 transition-opacity cursor-pointer duration-1000"

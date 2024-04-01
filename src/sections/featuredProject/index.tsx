@@ -7,7 +7,9 @@ const FeaturedProject = () => {
 
   return (
     <div
-      className={"bg-slate-800 p-16 h-[100vh] sm:w-[50vw] w-[100vw] relative"}
+      className={
+        "bg-slate-800 p-10 h-[100vh] sm:w-[50vw] w-[100vw] relative lg:p-16"
+      }
     >
       <Helix showSrc={showSrc} />
       <FeaturedProjectSrc setShowSrc={setShowSrc} />
