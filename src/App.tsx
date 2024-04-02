@@ -3,7 +3,7 @@ import FeaturedProject from "./sections/featuredProject"
 
 function App() {
   return (
-    <div className="flex sm:flex-row flex-col min-h-full">
+    <div className="min-h-screen relative">
       <AboutMe />
       <FeaturedProject />
     </div>

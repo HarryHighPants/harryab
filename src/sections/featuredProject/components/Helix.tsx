@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { generateHelixLine } from "./helixGenerator"
+import { generateHelixLine } from "../helpers/helixGenerator"
 interface Props {
   showSrc: boolean
 }
@@ -32,14 +32,14 @@ const Helix = ({ showSrc }: Props) => {
   return (
     <div
       className={
-        "overflow-hidden -mt-1 h-full select-none pointer-events-none transition-all duration-1000 " +
-        (showSrc ? "blur-md opacity-80" : "")
+        "overflow-hidden absolute inset-0 select-none pointer-events-none transition-all duration-1000 m-10 lg:m-16" +
+        (showSrc ? " blur-md opacity-80" : "")
       }
     >
       {helixLines.map((l, i) => (
         <pre
           key={i}
-          className="flex justify-center first-of-type:text-[#FFE600] text-white"
+          className="flex justify-center first-of-type:text-[#FFE600] text-white -mt-1"
           style={{ opacity: 1 - i * maxLines * 0.001 }}
         >
           {l}

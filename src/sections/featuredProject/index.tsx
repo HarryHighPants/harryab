@@ -1,6 +1,6 @@
 import { useState } from "react"
-import FeaturedProjectSrc from "./components/formattedSrc"
 import Helix from "./components/Helix"
+import FormattedSrcCode from "./components/FormattedSrcCode"
 
 const FeaturedProject = () => {
   const [showSrc, setShowSrc] = useState(false)
@@ -8,11 +8,11 @@ const FeaturedProject = () => {
   return (
     <div
       className={
-        "bg-slate-800 p-10 h-[100vh] sm:w-[50vw] w-[100vw] relative lg:p-16"
+        "bg-slate-800 sm:w-[50vw] w-[100vw] sm:absolute sm:inset-0 sm:left-auto max-h-[100vh] sm:max-h-none relative min-h-screen"
       }
     >
       <Helix showSrc={showSrc} />
-      <FeaturedProjectSrc setShowSrc={setShowSrc} />
+      <FormattedSrcCode setShowSrc={setShowSrc} />
     </div>
   )
 }
